@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bolleh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">Bolleh</string>
+    <string name="title_home">Home</string>
+    <string name="title_makeroom">Make Rooom</string>
+    <string name="title_history">History</string>
+</resources>

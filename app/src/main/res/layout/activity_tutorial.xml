@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Tutorial"
+        android:orientation="vertical"
+>
+
+    <TextView
+            android:layout_marginTop="50dp"
+            android:text="Welcome!"
+            android:textSize="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:requiresFadingEdge="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+    </android.support.v4.view.ViewPager>
+    <com.pm10.library.CircleIndicator
+            android:id="@+id/circle_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            app:p_gap="4dp"
+            app:p_radius="4dp"
+            app:p_strokeWidth="1dp"
+            app:p_defaultColor="@color/white"
+            app:p_selectedColor="@color/colorAccent"
+            app:p_strokeColor="@color/colorAccent"
+            android:layout_gravity="center"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+    >
+        <TextView
+                android:text="Start"
+                android:textSize="20dp"
+                android:id="@+id/t_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+        />
+        <TextView
+                android:text="Skip"
+                android:textSize="20dp"
+                android:id="@+id/t_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

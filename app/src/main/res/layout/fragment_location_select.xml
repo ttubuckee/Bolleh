@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".Fragment.LocationSelect"
+        android:layout_margin="20dp"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/categoryLinear"
+            android:layout_height="50dp"
+    >
+        <!--       <Spinner android:layout_width="wrap_content"
+                        android:spinnerMode="dialog"
+                        android:id="@+id/spinner"
+                        android:layout_height="match_parent">
+               </Spinner>-->
+        <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:hint="Insert Address"
+                android:id="@+id/AddressText"
+                android:layout_height="match_parent"
+        />
+        <com.dd.processbutton.FlatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/AddressButton"
+                android:text="Search"
+                android:layout_weight="3"
+                android:textColor="@android:color/white"
+                custom:pb_colorNormal="@color/colorPrimary"
+                custom:pb_colorPressed="@color/colorAccent"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/spinnerLinear"
+            android:orientation="vertical"
+            android:layout_height="100dp"
+            android:visibility="gone"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="70dp"
+        >
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Insert Address"
+                    android:id="@+id/promiseText"
+                    android:layout_height="match_parent"
+            />
+            <com.dd.processbutton.FlatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promiseSearch"
+                    android:text="Search"
+                    android:textColor="@android:color/white"
+                    custom:pb_colorNormal="@color/colorPrimary"
+                    custom:pb_colorPressed="@color/colorAccent"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="30dp"
+                android:visibility="visible"
+        >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Location : "
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:id="@+id/promise"
+                    android:text="Null"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+            />
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:id="@+id/spinner"
+                    android:layout_height="match_parent">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mapView"
+            tools:context=".LocationSelect"
+    >
+
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/buttonLinear"
+            android:gravity="right"
+    >
+
+        <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+        >
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_search"
+                    android:id="@+id/button"
+            />
+            <TextView
+                    android:text="Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+        />
+        <com.dd.processbutton.FlatButton
+                android:layout_width="80dp"
+                android:id="@+id/button2"
+                android:text="Next"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                custom:pb_colorNormal="@color/colorPrimary"
+                custom:pb_colorPressed="@color/colorAccent"
+        />
+    </LinearLayout>
+
+
+</LinearLayout>

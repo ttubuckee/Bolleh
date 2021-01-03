@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:custom="http://schemas.android.com/apk/res-auto"
+             tools:context=".Fragment.makeRoom">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+        <TextView
+                android:textStyle="bold"
+                android:text="Make Room"
+                android:textSize="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="20dp"
+        />
+        <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+            >
+                <TextView
+                        android:textStyle="bold"
+                        android:text="Title: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                />
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/roomTitle"
+                        android:hint="Insert room title"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+            >
+                <TextView
+                        android:textStyle="bold"
+                        android:text="Date: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="18dp"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Click to Select Date"
+                        android:id="@+id/date_textView"
+                        android:gravity="center_vertical"
+                        android:textSize="18dp"
+                />
+            </LinearLayout>
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup"
+            >
+                <TextView
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"
+                        android:text="Select Mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                />
+
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_margin="20dp"
+                        android:text="Custom Search"
+                        android:id="@+id/radioBtn1"
+                        android:textSize="18dp"
+                />
+                <RadioButton
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Auto Search"
+                        android:id="@+id/radioBtn2"
+                        android:textSize="18dp"
+                />
+            </RadioGroup>
+            <com.dd.processbutton.FlatButton
+                    android:textColor="@android:color/white"
+                    custom:pb_colorNormal="@color/colorPrimary"
+                    custom:pb_colorPressed="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/makeRoomBtn"
+                    android:text="Next"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+            />
+            <TextView
+                    android:id="@+id/page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
